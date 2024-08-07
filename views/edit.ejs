@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 flex w-dvw">
+    <form action="/edit" method="post">
+        <div class="flex flex-col gap-4 text-white w-full m-16">
+            <input name="Previous" class="bg-zinc-600  text-white px-4 py-2 rounded-md" value="<%= name.replace('.txt','')%>"
+                type="text" />
+                <input name="New" class="bg-zinc-600  text-white px-4 py-2 rounded-md" placeholder="New name"
+                type="text" />
+                <div class="flex justify-between items-center">
+
+                <input type="submit" value="Update" class="bg-green-600 hover:bg-green-700 px-5 py-2 rounded-md w-fit cursor-pointer hover:rounded-none transition-all" />
+                <a href="/" class="bg-blue-500 hover:bg-blue-600 transition-all w-fit h-fit  hover:rounded-none px-3 py-1 rounded-md">Go Back</a>
+                </div>
+        </div>
+    </form>
+</body>
+</html>
